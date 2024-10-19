@@ -15,6 +15,7 @@ this project owns simple FASTApi app serves as a proxy to elevenlabs.
 - poetry is used for dependency management and mypy for code checks. Black was used for formatting
 
 ## How to run
+NOTE: you have to set "API_KEY" environment variable with elevenlabs api key
 - run `poetry run python main.py` for api to start
 - run `poetry run pytest --verbose` for tests
 
