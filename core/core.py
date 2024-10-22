@@ -127,8 +127,6 @@ class App:
         """
         semaphore = await self.semaphores.get(username)
         async with semaphore:
-            await asyncio.sleep(2)  # delay for tests
-
             credits = len(re.findall(self.re_pattern, text))
             await self.db.reserve(username, credits)
 
